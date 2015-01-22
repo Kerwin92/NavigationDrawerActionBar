@@ -14,44 +14,44 @@ import com.example.navigationdrawertest.R;
 
 public class PhotosFragment extends Fragment {
 
-	public PhotosFragment() {
-	}
+    public PhotosFragment() {
+    }
 
-	@Override
-	public void onCreate(Bundle savedInstanceState) {
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
 
-		setHasOptionsMenu(true);
+        setHasOptionsMenu(true);
 
-		super.onCreate(savedInstanceState);
-	}
+        super.onCreate(savedInstanceState);
+    }
 
-	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
 
-		View rootView = inflater.inflate(R.layout.fragment_photos, container,
-				false);
+        View rootView = inflater.inflate(R.layout.fragment_photos, container,
+                false);
 
-		return rootView;
-	}
+        return rootView;
+    }
 
-	@Override
-	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-		inflater.inflate(R.menu.photo, menu);
-		super.onCreateOptionsMenu(menu, inflater);
-	}
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.photo, menu);
+        super.onCreateOptionsMenu(menu, inflater);
+    }
 
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action buttons
-		switch (item.getItemId()) {
-		case R.id.action_share:
-			Toast.makeText(getActivity(), R.string.action_share,
-					Toast.LENGTH_SHORT).show();
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action buttons
+        switch (item.getItemId()) {
+            case R.id.action_share:
+                Toast.makeText(getActivity(), R.string.action_share,
+                        Toast.LENGTH_SHORT).show();
 
-			return true;
-		default:
-			return super.onOptionsItemSelected(item);
-		}
-	}
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 }

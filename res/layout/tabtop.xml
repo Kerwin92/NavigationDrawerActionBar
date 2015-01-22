@@ -3,44 +3,50 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal">
-    <LinearLayout 
-         android:id="@+id/llyt_fragment0"
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         android:layout_weight="1"
-		style="@style/Linearlayout_Style">
-        <TextView 
+
+    <LinearLayout
+        android:id="@+id/llyt_fragment0"
+        style="@style/Linearlayout_Style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
             android:id="@+id/tv_fragment0"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/tuijian"
             android:gravity="center_horizontal"
-            android:textColor="@color/black"/>
-         <ImageView
-            	android:layout_width="wrap_content"
-            	android:layout_height="wrap_content"
-            	android:clickable="true"
-            	android:layout_gravity="center_horizontal"
-            	android:src="@drawable/homepage_slide" />
+            android:text="@string/tuijian"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:src="@drawable/homepage_slide" />
     </LinearLayout>
-    <LinearLayout 
-         android:id="@+id/llyt_fragment1"
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         android:layout_weight="1"
-         style="@style/Linearlayout_Style">
-        <TextView 
+
+    <LinearLayout
+        android:id="@+id/llyt_fragment1"
+        style="@style/Linearlayout_Style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
             android:id="@+id/tv_fragment1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/suoyou"
             android:gravity="center_horizontal"
-            android:textColor="@color/black"/>
+            android:text="@string/suoyou"
+            android:textColor="@color/black" />
+
         <ImageView
-            	android:layout_width="wrap_content"
-            	android:layout_height="wrap_content"
-            	android:clickable="true"
-            	android:layout_gravity="center_horizontal"
-            	android:src="@drawable/homepage_slide" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:src="@drawable/homepage_slide" />
     </LinearLayout>
 </LinearLayout>
