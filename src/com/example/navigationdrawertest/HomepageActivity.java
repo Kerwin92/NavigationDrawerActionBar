@@ -7,6 +7,7 @@ import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
+import android.nfc.Tag;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.Fragment;
@@ -56,7 +57,7 @@ public class HomepageActivity extends FragmentActivity implements
 	private ViewPager viewPager;
 	private Fragment fragment = null;
 	private ArrayList<Fragment> fragmentlist = new ArrayList<Fragment>();
-
+    private final String TAG="this is radio from Kerwin";
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -67,6 +68,9 @@ public class HomepageActivity extends FragmentActivity implements
 		if (savedInstanceState == null) {
 			selectItem(0);
 		}
+        if (true){
+            Log.i(TAG,"here is for test");
+        }
 	}
 
 	@SuppressLint("NewApi")
